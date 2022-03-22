@@ -6,11 +6,11 @@ import (
 )
 
 type Shape interface {
-	area() float64
+	Area() float64
 }
 
 func CalculateArea(s Shape) {
-	fmt.Printf("The area of this shape is %0.2f", s.area())
+	fmt.Printf("The Area of this shape is %0.2f", s.Area())
 }
 
 type Rectangle struct {
@@ -18,7 +18,7 @@ type Rectangle struct {
 	Height float64
 }
 
-func (r Rectangle) area() float64 {
+func (r Rectangle) Area() float64 {
 	return r.Height * r.Width
 }
 
@@ -26,6 +26,6 @@ type Circle struct {
 	Radius float64
 }
 
-func (c Circle) area() float64 {
+func (c Circle) Area() float64 {
 	return math.Pi * math.Pow(c.Radius, 2)
 }
