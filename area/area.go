@@ -14,18 +14,18 @@ func CalculateArea(s Shape) {
 }
 
 type Rectangle struct {
-	width  float64
-	height float64
+	Width  float64
+	Height float64
 }
 
 func (r Rectangle) area() float64 {
-	return r.height * r.width
+	return r.Height * r.Width
 }
 
 type Circle struct {
-	radius float64
+	Radius float64
 }
 
 func (c Circle) area() float64 {
-	return math.Pi * math.Pow(c.radius, 2)
+	return math.Pi * math.Pow(c.Radius, 2)
 }
