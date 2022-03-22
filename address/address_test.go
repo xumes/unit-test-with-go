@@ -1,6 +1,9 @@
-package address
+package address_test
 
-import "testing"
+import (
+	. "go-tests/address"
+	"testing"
+)
 
 type testCase struct {
 	addressToTest  string
